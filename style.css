@@ -1,7 +1,13 @@
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/futur.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
 body {
     background-color: #ede6d6;
     margin: 0;
-    font-family: Futura, sans-serif;
+    font-family: 'Futura', sans-serif;
 }
 
 #output-wrapper {
