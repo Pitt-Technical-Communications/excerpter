@@ -221,7 +221,7 @@
     z-index: -1;
     /* pointer-events: none; */
 
-    animation: shift .10s linear infinite both;
+    animation: shift .2s linear infinite both;
 }
 
 @keyframes shift {
@@ -232,4 +232,22 @@
     100% {
         transform: translateX(-10%) translateY(-10%);
     }
+}
+
+
+
+.glow {
+  color: #green;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #00FF00, 0 0 20px #fff, 0 0 30px #00FF00, 0 0 40px ##fff, 0 0 50px #00FF00, 0 0 60px #fff, 0 0 70px #00FF00;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff
+    , 0 0 50px #00FF00, 0 0 60px #fff, 0 0 70px #00FF00, 0 0 80px #fff;
+  }
 }
