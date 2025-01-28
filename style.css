@@ -197,3 +197,39 @@
   .line:nth-child(29) { width: 44%; }
   .line:nth-child(30) { width: 50%; }
   
+
+  *,
+  *::before,
+  *::after {
+      box-sizing: border-box;
+      margin: 0;
+  }
+
+  .container {
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+
+.fuzzy-overlay {
+    position: absolute;
+    inset: -200%;
+    background-image: url("noise.png");
+    opacity: 19%;
+    z-index: 0;
+    /* pointer-events: none; */
+
+    animation: shift .10s linear infinite both;
+}
+
+@keyframes shift {
+    0% {
+        transform: translateX(10%) translateY(10%);
+    }
+
+    100% {
+        transform: translateX(-10%) translateY(-10%);
+    }
+}
