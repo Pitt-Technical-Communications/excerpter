@@ -227,26 +227,7 @@
 
 
 
-.fuzzy-overlay {
-    position: absolute;
-    inset: -200%;
-    background-image: url("noise.png");
-    opacity: 19%;
-    z-index: -1;
-    /* pointer-events: none; */
 
-    animation: shift .2s linear infinite both;
-}
-
-@keyframes shift {
-    0% {
-        transform: translateX(10%) translateY(10%);
-    }
-
-    100% {
-        transform: translateX(-10%) translateY(-10%);
-    }
-}
 
 
 
