@@ -11,6 +11,19 @@
     font-family: 'Futura', sans-serif;
     position: relative;
     height: 100vh;
+    animation: fadeInAnimation ease 10s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+
   }
   
   #output-wrapper {
@@ -251,3 +264,5 @@
     , 0 0 50px #00FF00, 0 0 60px #fff, 0 0 70px #00FF00, 0 0 80px #fff;
   }
 }
+
+
